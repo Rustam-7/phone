@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  body {
+    background: rgba(237, 243, 248, 1);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 80px;
+  }
+  
+  ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(54, 83, 107, 1);
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17.63px;
+    letter-spacing: 0px;
+  }
+  li button {
+    width: 173px;
+    height: 48px;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17.63px;
+    letter-spacing: -0.12px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: rgba(186, 66, 112, 1);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .section-1 img {
+    height: 500px;
+  }
+  h1 {
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+    color: rgba(54, 83, 107, 1);
+    max-width: 546px;
+  }
+  
+  .sectionl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .sectionm{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+ margin-left: 50px;
+ margin-right: 50px;
+  }
+  footer{
+    margin-top: 100px;
+  }
+  
+  @media (max-width: 992px) {
+    li button {
+      width: 130px;
+      height: 38px;
+      font-size: 14px;
+    }
+    ul {
+      gap: 20px;
+    }
+    .section-1{
+      flex-direction: column-reverse;
+      text-align: center;
+      align-items: center;
+    }
+    .sectionl{
+      flex-direction: column;
+      
+    }
+  }
+  
+  @media (max-width: 576px) {
+    ul {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+    h1{
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .section-1 img{
+      height: 300px;
+    }
+    .sectionl{
+      flex-direction: column;
+      
+    }
+    .sectionm{
+      flex-direction: column;
+      align-items: center;
+      gap: 50px
+      ;
+    }
+  }
